@@ -27,8 +27,12 @@ Production Ready GO - Development Workspace
   ```
   $vi ~/.profile
   
-  ADD the following:
-  export PATH=$PATH:/usr/local/go/bin
+  ADD the following: 
+  *** GOROOT is location where Go package is installed on your system while GOPATH is location of working directory ***
+
+  export GOROOT=/usr/local/go
+  export GOPATH=$HOME/go_projects
+  export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
   ```
 
 ##### Run Go
