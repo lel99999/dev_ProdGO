@@ -8,7 +8,7 @@ Production Ready GO - Development Workspace
   $go version
   ```
 
-- Ubuntu:
+- Ubuntu (go1.16.7.linux-amd64.tar.gz = 123MB):
   ```
   $curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
   $tar xvf go1.16.7.linux-amd64.tar.gz
