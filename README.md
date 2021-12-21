@@ -19,9 +19,16 @@ Production Ready GO - Development Workspace
 - Ubuntu (go1.16.7.linux-amd64.tar.gz = 123MB):
   ```
   $curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
-  $tar xvf go1.16.7.linux-amd64.tar.gz
+  $sudo tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz
   $sudo chown -R root:root ./go
   $sudo mv go /usr/local
+  ```
+  Set up GO Paths
+  ```
+  $vi ~/.profile
+  
+  ADD the following:
+  export PATH=$PATH:/usr/local/go/bin
   ```
 
 ##### Run Go
@@ -29,4 +36,9 @@ Production Ready GO - Development Workspace
 $go run main.go
 ```
 
+##### Turn Go Code into a binary executable
+```
+$go build main.go
+$./main
+```
 
