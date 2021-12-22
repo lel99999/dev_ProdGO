@@ -45,4 +45,7 @@ $go run main.go
 $go build main.go
 $./main
 ```
-
+##### In order to run go install successfully, you must pass it the install path of the binary you created with go build. To find the binary’s install path, run the following go list command: 
+```
+$go list -f '{{.Target}}'
+```
