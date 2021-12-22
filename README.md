@@ -9,7 +9,7 @@ Production Ready GO - Development Workspace
   
   $mkdir -p $HOME/go/{bin,src,pkg}
   ```
-  Set up Environment
+  Set up Environment/GO Paths
   ```
   export GOPATH=$HOME/go
   export GOROOT="$(brew --prefix golang)/libexec"
@@ -23,7 +23,7 @@ Production Ready GO - Development Workspace
   $sudo chown -R root:root ./go
   $sudo mv go /usr/local
   ```
-  Set up GO Paths
+  Set up Environment/GO Paths
   ```
   $vi ~/.profile
   
