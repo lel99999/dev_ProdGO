@@ -49,3 +49,18 @@ $./main
 ```
 $go list -f '{{.Target}}'
 ```
+
+##### Add GoLang Linters
+- [https://golangci-lint.run/usage/install/#local-installation](https://golangci-lint.run/usage/install/#local-installation) <br/>
+  - MacOS 
+  ```
+  $brew install golangci-lint
+  $brew upgrade golangci-lint
+  ```
+
+  - Linux
+  ```
+  $curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.43.0
+  $golangci-lint --version
+  ```
+
