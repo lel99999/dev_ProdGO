@@ -64,3 +64,21 @@ $go list -f '{{.Target}}'
   $golangci-lint --version
   ```
 
+- To Run default set of linters:
+  ```
+  $golanci-lint run
+  ```
+
+- Go vet is a tool concerned with code correctness
+  - Use:
+  ```
+  $go vetn main.go
+  ```
+##### Hexagonal Architecture (introduced 2015)
+- Original Intent:
+  `Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases.` <br/>
+
+- 3 Principles of Hexagonal Architecture:
+  - Explicitly separate User-Side, Business Logic, and Server-Side
+  - Dependencies are going from User-Side and Server-Side to the Business Logic
+  - We isolate the boundaries by using Ports and Adapters
