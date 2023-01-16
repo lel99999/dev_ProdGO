@@ -74,6 +74,11 @@ $go list -f '{{.Target}}'
   ```
   $go vetn main.go
   ```
+  
+##### Add Go Debugger
+- Add go-devel
+  [https://github.com/go-delve/delve](https://github.com/go-delve/delve) <br/>
+
 ##### Hexagonal Architecture (introduced 2015)
 - Original Intent:
   `Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases.` <br/>
